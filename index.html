@@ -1,0 +1,91 @@
+# Personal site — one-page static portfolio
+# Zero dependencies, deploys anywhere (GitHub Pages/Netlify/Vercel). Plain HTML/CSS.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nathaniel Jones — Systems & Cloud Support Builder</title>
+<meta name="description" content="Self-taught systems builder. Linux, Docker, Python, LLM infrastructure. Entry-level remote IT/cloud support.">
+<style>
+  :root { --ink:#e8e6e3; --dim:#9a968f; --accent:#ff6a3d; --bg:#14120f; --card:#1c1915; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--ink); font:16px/1.6 ui-monospace,'SF Mono',Menlo,Consolas,monospace; }
+  .wrap { max-width:820px; margin:0 auto; padding:48px 24px; }
+  h1 { font-size:1.9rem; letter-spacing:-.02em; }
+  h1 span { color:var(--accent); }
+  .tag { color:var(--dim); margin-top:.4rem; }
+  section { margin-top:2.6rem; }
+  h2 { font-size:.8rem; text-transform:uppercase; letter-spacing:.14em; color:var(--accent); margin-bottom:.9rem; }
+  .card { background:var(--card); border:1px solid #2a251f; border-radius:10px; padding:1.1rem 1.3rem; margin-bottom:1rem; }
+  .card b { color:var(--ink); } .card p { color:var(--dim); font-size:.92rem; margin-top:.35rem; }
+  a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+  ul { list-style:none; } ul li { padding:.25rem 0; color:var(--dim); } ul li b { color:var(--ink); }
+  .contact { display:flex; flex-wrap:wrap; gap:1.2rem; margin-top:1rem; font-size:.92rem; }
+  footer { margin-top:3rem; color:#55504a; font-size:.8rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Nathaniel <span>Jones</span></h1>
+  <p class="tag">Self-taught systems &amp; cloud support builder — Mississippi, USA · remote-ready</p>
+
+  <section>
+    <h2>What I do</h2>
+    <p>I'm entirely self-taught in software <em>and</em> hardware. In five months I went from zero
+    to running a production-style AI server I designed and built myself — and I publish every
+    tested configuration as open source.</p>
+  </section>
+
+  <section>
+    <h2>The Forge — my home datacenter</h2>
+    <div class="card">
+      <b>2× Xeon Silver 4216 · 562GB RAM · Tesla P100 16GB · 13.5TB</b>
+      <p>Serving LLMs 24/7: a 744B-parameter MoE on pure CPU, GPU-offloaded models at 256K
+      context, NUMA-pinned multi-model fleets. Distributed inference across an NVIDIA node
+      and an AMD Radeon node over direct Ethernet. Measured tuning, not vibes.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Open source</h2>
+    <div class="card">
+      <b><a href="https://github.com/njjones1998-tech/llama-cpp-engine-recipes">llama-cpp-engine-recipes</a></b>
+      <p>Production-tested launch configs: MTP spec-decode, 284B pure-CPU, GPU+RAM expert offload, cross-vendor RPC, NUMA fleets.</p>
+    </div>
+    <div class="card">
+      <b><a href="https://github.com/njjones1998-tech/self-taught-academy">self-taught-academy</a></b>
+      <p>A self-teaching platform: 15-module curriculum, deterministic pytest verifier, Leitner review, cert-prep engine.</p>
+    </div>
+    <div class="card">
+      <b><a href="https://github.com/njjones1998-tech/scribe-streaming-bridge">scribe-streaming-bridge</a></b>
+      <p>Python Telegram bridge that streams live LLM output and executes its code in a real environment.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li><b>Systems:</b> Linux admin, systemd, storage, performance tuning, log analysis</li>
+      <li><b>Containers/Virt:</b> Docker, KVM/libvirt</li>
+      <li><b>AI infra:</b> llama.cpp, CUDA offload, quantization, speculative decoding, NUMA</li>
+      <li><b>Code:</b> Python, Bash, REST APIs, pytest, Git</li>
+      <li><b>Net:</b> TCP/IP, SSH, VPN, reverse proxies, firewalls</li>
+      <li><b>Cert track:</b> Microsoft Azure AZ-900 (in progress) → AZ-104</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="contact">
+      <a href="mailto:njjones1999@gmail.com">njjones1999@gmail.com</a>
+      <span>(601) 766-5953</span>
+      <a href="https://github.com/njjones1998-tech">github.com/njjones1998-tech</a>
+      <a href="https://www.linkedin.com/in/nathaniel-jones-381208433">linkedin</a>
+    </div>
+  </section>
+
+  <footer>Hand-built HTML. No framework, no tracking — like everything else here, it just runs.</footer>
+</div>
+</body>
+</html>
